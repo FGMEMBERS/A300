@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+	<path>../../Models/Interior/cabin_b2.3ds</path>
+	<texture-path>../../Textures/Livery/House</texture-path>
+
+	<animation>
+		<type>noshadow</type>
+		<object-name>BINS</object-name>
+		<object-name>CEILING</object-name>
+		<object-name>FLOOR</object-name>
+		<object-name>SIDEWALL</object-name>
+	</animation>
+
+	<animation>
+		<type>material</type>
+		<object-name>BINS</object-name>
+		<object-name>CEILING</object-name>
+		<object-name>FLOOR</object-name>
+		<object-name>SIDEWALL</object-name>
+		<property-base>/sim/model/livery/material/emit_color</property-base>
+		<diffuse>
+			<red-prop>diffuse/red</red-prop>
+			<green-prop>diffuse/green</green-prop>
+			<blue-prop>diffuse/blue</blue-prop>
+		</diffuse>
+		<ambient>
+			<red-prop>ambient/red</red-prop>
+			<green-prop>ambient/green</green-prop>
+			<blue-prop>ambient/blue</blue-prop>
+		</ambient>
+		<specular>
+			<red-prop>specular/red</red-prop>
+			<green-prop>specular/green</green-prop>
+			<blue-prop>specular/blue</blue-prop>
+		</specular>
+		<emission>
+			<red-prop>emission/red</red-prop>
+			<green-prop>emission/green</green-prop>
+			<blue-prop>emission/blue</blue-prop>
+		</emission>
+		<transparency>
+			<alpha-prop>transparency/alpha</alpha-prop>
+		</transparency>
+		<shininess-prop>shininess</shininess-prop>
+	</animation>
+</PropertyList>

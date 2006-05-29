@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+	<path>../../Models/Wings/flaps_b2.3ds</path> 
+	<!--texture-path>../Textures/Livery/House</texture-path-->
+
+	<!-- Objects that should not cast shadows for performance reasons. -->
+	<animation>
+		<type>noshadow</type>
+		<object-name>FAIRINGS</object-name>
+		<object-name>INSIDE01</object-name>
+		<object-name>INSIDE02</object-name>
+		<object-name>INSIDE03</object-name>
+		<object-name>INSIDE04</object-name>
+		<object-name>INSIDE05</object-name>
+		<object-name>INSIDE06</object-name>
+		<object-name>INSIDE07</object-name>
+		<object-name>INSIDE08</object-name>
+		<object-name>INSIDE09</object-name>
+		<object-name>INSIDE10</object-name>
+		<object-name>SIDES_LC</object-name>
+		<object-name>SIDES_LI</object-name>
+		<object-name>SIDES_LO</object-name>
+		<object-name>SIDES_RC</object-name>
+		<object-name>SIDES_RI</object-name>
+		<object-name>SIDES_RO</object-name>
+		<object-name>TRACKS</object-name>
+	</animation>
+</PropertyList>

@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+
+<PropertyList include="center.xml">
+
+	<model>
+		<path>Aircraft/A300/XMLs/Wings/ailerons.xml</path>
+	</model>
+	<model>
+		<path>Aircraft/A300/XMLs/Wings/flaps_b2.xml</path>
+	</model>
+	<model>
+		<path>Aircraft/A300/XMLs/Wings/leading_b2.xml</path>
+	</model>
+	<model>
+		<path>Aircraft/A300/XMLs/LandingGears/mlgL.xml</path>
+	</model>
+	<model>
+		<path>Aircraft/A300/XMLs/LandingGears/mlgR.xml</path>
+	</model>
+	<model>
+		<path>Aircraft/A300/XMLs/Wings/pylon_b2.xml</path>
+		<offsets>
+			<x-m>-3.945</x-m>
+			<y-m>-7.9399</y-m>
+			<z-m>-1.773</z-m>
+		</offsets>
+	</model>
+	<model>
+		<path>Aircraft/A300/XMLs/Wings/pylon_b2.xml</path>
+		<offsets>
+			<x-m>-3.945</x-m>
+			<y-m>7.9399</y-m>
+			<z-m>-1.773</z-m>
+		</offsets>
+	</model>
+	<model>
+		<path>Aircraft/A300/XMLs/Wings/spoilers.xml</path>
+	</model>
+	<model>
+		<path>Aircraft/A300/XMLs/Wings/trailing_b2.xml</path>
+	</model>
+</PropertyList>
