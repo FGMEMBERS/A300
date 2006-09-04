@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+
+<PropertyList include="b2.nacelles.cf6_50.xml">
+	<!--offsets>
+		<heading-deg>-1.0</heading-deg>
+	</offsets-->
+	
+	<!-- Note there is no difference between the left and right pylon at the moment. -->
+	<model>
+		<path>Aircraft/A300/Engines/XMLs/b2.pylons.cf6_50.left.xml</path>
+	</model>
+	
+	<model>
+		<offsets>
+			<pitch-deg>0.5</pitch-deg>
+		</offsets>
+		<path>Aircraft/A300/Engines/XMLs/cf6_50.xml</path>
+	</model>
+	
+	<animation>
+		<name>Fan</name>
+		<type>spin</type>
+		<object-name>Cone</object-name>
+		<object-name>Blades</object-name>
+		<factor>-67</factor>
+		<property>/engines/engine[1]/n1</property>
+		<axis>
+			<x>1</x>
+			<y>0</y>
+			<z>0</z>
+		</axis>
+	</animation>
+</PropertyList>

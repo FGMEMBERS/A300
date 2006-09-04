@@ -5,6 +5,7 @@
 	<texture-path>../../Textures/Livery/House</texture-path>
 
 	<animation>
+		<name>Interior.Shadow.Off</name>
 		<type>noshadow</type>
 		<object-name>BINS</object-name>
 		<object-name>CEILING</object-name>
@@ -13,11 +14,9 @@
 	</animation>
 
 	<animation>
+		<name>Interior.Glow</name>
 		<type>material</type>
-		<object-name>BINS</object-name>
-		<object-name>CEILING</object-name>
-		<object-name>FLOOR</object-name>
-		<object-name>SIDEWALL</object-name>
+		<object-name>Interior.Shadow.Off</object-name>
 		<property-base>/sim/model/livery/material/emit_color</property-base>
 		<diffuse>
 			<red-prop>diffuse/red</red-prop>

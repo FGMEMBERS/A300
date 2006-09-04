@@ -17,16 +17,18 @@
 	<model>
 		<path>Aircraft/A300/XMLs/LandingGears/mlgR.xml</path>
 	</model>
+	<!-- Note there is no difference between the left and right pylon at the moment. -->
 	<model>
-		<path>Aircraft/A300/XMLs/Wings/pylon_b2.xml</path>
+		<path>Aircraft/A300/Engines/XMLs/b2.engines.left.xml</path>
 		<offsets>
 			<x-m>-3.945</x-m>
 			<y-m>-7.9399</y-m>
 			<z-m>-1.773</z-m>
 		</offsets>
 	</model>
+	<!-- Note there is no difference between the left and right pylon at the moment. -->
 	<model>
-		<path>Aircraft/A300/XMLs/Wings/pylon_b2.xml</path>
+		<path>Aircraft/A300/Engines/XMLs/b2.engines.left.xml</path>
 		<offsets>
 			<x-m>-3.945</x-m>
 			<y-m>7.9399</y-m>
