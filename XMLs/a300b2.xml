@@ -1,8 +1,9 @@
 <?xml version="1.0"?>
 
-<PropertyList include="fuselage_b2.xml">
+<PropertyList include="b2.fuselage.xml">
 	<offsets>
 		<x-m>-28.938</x-m>
+		<!--z-m>0.1505124</z-m-->
 	</offsets>
 	
 	<model>
@@ -16,12 +17,12 @@
 	
 	<model>
 		<name>Interior</name>
-		<path>Aircraft/A300/XMLs/Interior/cabin_b2.xml</path>
+		<path>Aircraft/A300/XMLs/Interior/b2.interior.xml</path>
 	</model>
 	
 	<model>
 		<name>Landing Gears</name>
-		<path>Aircraft/A300/XMLs/LandingGears/nlg.xml</path>
+		<path>Aircraft/A300/XMLs/LandingGears/b2.nlg.xml</path>
 	</model>
 	
 	<model>
@@ -40,7 +41,7 @@
 	
 	<model>
 		<name>Wings</name>
-		<path>Aircraft/A300/XMLs/Wings/wings.xml</path>
+		<path>Aircraft/A300/XMLs/Wings/b2.wings.xml</path>
 	</model>
 	
 	<!-- Make the flightdeck invisible from outside views.  This is a temporary measure until we have a

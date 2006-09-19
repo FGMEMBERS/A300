@@ -1,0 +1,181 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+	<path>../../Models/LandingGears/b2.mlg.right.3ds</path> 
+	<!--texture-path>../Textures/Livery/House</texture-path-->
+	
+	<offsets>
+		<!--<x-m>31.6549</x-m>-->
+		<x-m>5.5374</x-m>
+		<y-m>4.8</y-m>
+		<!--<z-m>-1.014</z-m>-->
+		<z-m>-0.23886</z-m>
+		<pitch-deg>0.0</pitch-deg>
+		<heading-offset-deg>180</heading-offset-deg>
+	</offsets>
+	
+	<model>
+		<name>Fwd_Left_Tire</name>
+		<path>Aircraft/A300/XMLs/LandingGears/mTire.xml</path>
+		<offsets>
+			<x-m>-0.6985</x-m>
+			<y-m>-0.4445</y-m>
+			<z-m>-3.593759</z-m>
+		</offsets>
+	</model>
+	<model>
+		<name>Fwd_Right_Tire</name>
+		<path>Aircraft/A300/XMLs/LandingGears/mTire.xml</path>
+		<offsets>
+			<x-m>-0.6985</x-m>
+			<y-m>0.4445</y-m>
+			<z-m>-3.593759</z-m>
+		</offsets>
+	</model>
+	<model>
+		<name>Aft_Left_Tire</name>
+		<path>Aircraft/A300/XMLs/LandingGears/mTire.xml</path>
+		<offsets>
+			<x-m>0.6985</x-m>
+			<y-m>-0.4445</y-m>
+			<z-m>-3.593759</z-m>
+		</offsets>
+	</model>
+	<model>
+		<name>Aft_Right_Tire</name>
+		<path>Aircraft/A300/XMLs/LandingGears/mTire.xml</path>
+		<offsets>
+			<x-m>0.6985</x-m>
+			<y-m>0.4445</y-m>
+			<z-m>-3.593759</z-m>
+		</offsets>
+	</model>
+	
+	<!-- Disable shoadow for the following objects. -->
+	<animation>
+		<name>Bogey.NoShadow</name>
+		<type>noshadow</type>
+		<object-name>BOGEY</object-name>
+	</animation>
+	
+	<animation>
+		<name>Side_Stay.Upper.NoShadow</name>
+		<type>noshadow</type>
+		<object-name>S_STAY.U</object-name>
+	</animation>
+	
+	<animation>
+		<name>Torque_Links.01</name>
+		<type>noshadow</type>
+		<object-name>LINK.01</object-name>
+	</animation>
+	
+	<animation>
+		<name>Torque_Links.02</name>
+		<type>noshadow</type>
+		<object-name>LINK.02</object-name>
+	</animation>
+	
+	<!-- Gear retraction sequence. -->
+	<animation>
+		<name>Side_Stay.Upper</name>
+		<type>rotate</type>
+		<object-name>Side_Stay.Upper.NoShadow</object-name>
+		<property>/gear/gear[2]/position-norm</property>
+		<interpolation>
+			<entry><ind>0.0</ind><dep>-50</dep></entry>
+			<entry><ind>0.2</ind><dep>-50</dep></entry>
+			<entry><ind>0.8</ind><dep>0.0</dep></entry>
+			<entry><ind>1.0</ind><dep>0.0</dep></entry>
+		</interpolation>
+		<axis>
+			
+			<x1-m>1</x1-m>
+			<y1-m>-2.324478</y1-m>
+			<z1-m>-0.146334</z1-m>
+			
+			<x2-m>0</x2-m>
+			<y2-m>-2.324478</y2-m>
+			<z2-m>-0.146334</z2-m>
+			
+		</axis>
+	</animation>
+	
+	<animation>
+		<name>Side_Stay.Lower</name>
+		<type>rotate</type>
+		<object-name>S_STAY.L</object-name>
+		<property>/gear/gear[2]/position-norm</property>
+		<interpolation>
+			<entry><ind>0.0</ind><dep>50.0</dep></entry>
+			<entry><ind>0.2</ind><dep>50.0</dep></entry>
+			<entry><ind>0.8</ind><dep>0.0</dep></entry>
+			<entry><ind>1.0</ind><dep>0.0</dep></entry>
+		</interpolation>
+		<axis>
+			
+			<x1-m>1</x1-m>
+			<y1-m>0.106147</y1-m>
+			<z1-m>-2.329609</z1-m>
+			
+			<x2-m>0</x2-m>
+			<y2-m>0.106147</y2-m>
+			<z2-m>-2.329609</z2-m>
+			
+		</axis>
+	</animation>
+	
+	<animation>
+		<name>Retraction</name>
+		<type>rotate</type>
+		<object-name>Aft_Left_Tire</object-name>
+		<object-name>Aft_Right_Tire</object-name>
+		<object-name>BOGEY</object-name>
+		<object-name>FITTING</object-name>
+		<object-name>Fwd_Left_Tire</object-name>
+		<object-name>Fwd_Right_Tire</object-name>
+		<object-name>OLEO</object-name>
+		<object-name>Side_Stay.Lower</object-name>
+		<object-name>Torque_Links.01</object-name>
+		<object-name>Torque_Links.02</object-name>
+		<property>/gear/gear[0]/position-norm</property>
+		<interpolation>
+			<entry><ind>0.0</ind><dep>80.5</dep></entry>
+			<entry><ind>0.2</ind><dep>80.5</dep></entry>
+			<entry><ind>0.8</ind><dep>0.0</dep></entry>
+			<entry><ind>1.0</ind><dep>0.0</dep></entry>
+		</interpolation>
+		<axis>
+			
+			<x>-1</x>
+			
+		</axis>
+	</animation>
+	
+	<animation>
+		<name>Lock Rods.Selection</name>
+		<type>select</type>
+		<object-name>LOCK_ROD.U</object-name>
+		<object-name>LOCK_ROD.L</object-name>
+		<condition>
+			<greater-than>
+				<property>/gear/gear[2]/position-norm</property>
+				<value>0.99</value>
+			</greater-than>
+		</condition>
+	</animation>
+	
+	<animation>
+		<name>Selection</name>
+		<type>select</type>
+		<object-name>Retraction</object-name>
+		<object-name>MEMBERS</object-name>
+		<condition>
+			<greater-than>
+				<property>/gear/gear[2]/position-norm</property>
+				<value>0</value>
+			</greater-than>
+		</condition>
+	</animation>
+</PropertyList>

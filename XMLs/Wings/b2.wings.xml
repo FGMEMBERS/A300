@@ -12,13 +12,14 @@
 		<path>Aircraft/A300/XMLs/Wings/leading_b2.xml</path>
 	</model>
 	<model>
-		<path>Aircraft/A300/XMLs/LandingGears/mlgL.xml</path>
+		<path>Aircraft/A300/XMLs/LandingGears/b2.mlg.left.xml</path>
 	</model>
 	<model>
-		<path>Aircraft/A300/XMLs/LandingGears/mlgR.xml</path>
+		<path>Aircraft/A300/XMLs/LandingGears/b2.mlg.right.xml</path>
 	</model>
 	<!-- Note there is no difference between the left and right pylon at the moment. -->
 	<model>
+		<name>Engines.GE.Left</name>
 		<path>Aircraft/A300/Engines/XMLs/b2.engines.left.xml</path>
 		<offsets>
 			<x-m>-3.945</x-m>
@@ -28,6 +29,7 @@
 	</model>
 	<!-- Note there is no difference between the left and right pylon at the moment. -->
 	<model>
+		<name>Engines.GE.Right</name>
 		<path>Aircraft/A300/Engines/XMLs/b2.engines.left.xml</path>
 		<offsets>
 			<x-m>-3.945</x-m>
@@ -39,6 +41,7 @@
 		<path>Aircraft/A300/XMLs/Wings/spoilers.xml</path>
 	</model>
 	<model>
-		<path>Aircraft/A300/XMLs/Wings/trailing_b2.xml</path>
+		<name>Trailing Edge</name>
+		<path>Aircraft/A300/XMLs/Wings/b2.trailing.xml</path>
 	</model>
 </PropertyList>

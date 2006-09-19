@@ -1,0 +1,173 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+	<path>../Models/b2.fuselage.3ds</path>
+	<!--texture-path>../Textures/Livery/House</texture-path-->
+	<!--offsets>
+		<z-m>4.810</z-m>
+	</offsets-->
+	
+	<!-- Objects that shouldn't cast shoadow. -->
+	<animation>
+		<name>Windows.noshadow</name>
+		<type>noshodow</type>
+		<object-name>WINDOWS</object-name>
+	</animation>
+	
+	<animation>
+		<name>Windows.noshadow2</name>
+		<type>noshodow</type>
+		<object-name>Windows.noshadow</object-name>
+	</animation>
+	
+	<!-- Animation for the doors of the main gears. -->
+	<animation>
+		<name>MG DOOR.Left</name>
+		<type>rotate</type>
+		<object-name>MG DOOR.L</object-name>
+		<property>/gear/gear[1]/position-norm</property>
+		<interpolation>
+			<entry><ind>0.0</ind><dep>0.0</dep></entry>
+			<entry><ind>0.2</ind><dep>90.0</dep></entry>
+			<entry><ind>0.8</ind><dep>90.0</dep></entry>
+			<entry><ind>1.0</ind><dep>0.0</dep></entry>
+		</interpolation>
+		<axis>
+			
+			<x1-m>30.669049</x1-m>
+			<y1-m>-0.530</y1-m>
+			<z1-m>-2.766578</z1-m>
+			
+			<x2-m>32.600943</x2-m>
+			<y2-m>-0.530</y2-m>
+			<z2-m>-2.766578</z2-m>
+			
+		</axis>
+	</animation>
+	<animation>
+		<name>MG DOOR.Right</name>
+		<type>rotate</type>
+		<object-name>MG DOOR.R</object-name>
+		<property>/gear/gear[2]/position-norm</property>
+		<interpolation>
+			<entry><ind>0.0</ind><dep>0.0</dep></entry>
+			<entry><ind>0.2</ind><dep>-90.0</dep></entry>
+			<entry><ind>0.8</ind><dep>-90.0</dep></entry>
+			<entry><ind>1.0</ind><dep>0.0</dep></entry>
+		</interpolation>
+		<axis>
+			
+			<x1-m>30.669049</x1-m>
+			<y1-m>0.530</y1-m>
+			<z1-m>-2.766578</z1-m>
+			
+			<x2-m>32.600943</x2-m>
+			<y2-m>0.530</y2-m>
+			<z2-m>-2.766578</z2-m>
+			
+		</axis>
+	</animation>
+	
+	<!-- Animation for the doors of the nose gear. -->
+	<animation>
+		<name>NG Door.Left.Fwd</name>
+		<type>rotate</type>
+		<object-name>NG DOOR.L1</object-name>
+		<property>/gear/gear[0]/position-norm</property>
+		<interpolation>
+			<entry><ind>0.0</ind><dep>0.0</dep></entry>
+			<entry><ind>0.2</ind><dep>-90.0</dep></entry>
+			<entry><ind>0.8</ind><dep>-90.0</dep></entry>
+			<entry><ind>1.0</ind><dep>0.0</dep></entry>
+		</interpolation>
+		<axis>
+			<x1-m>10.190</x1-m>
+			<y1-m>-0.6</y1-m>
+			<z1-m>-2.084459</z1-m>
+			<x2-m>12.6</x2-m>
+			<y2-m>-0.6</y2-m>
+			<z2-m>-2.528678</z2-m>
+		</axis>
+	</animation>
+	
+	<animation>
+		<name>NG Door.Right.Fwd</name>
+		<type>rotate</type>
+		<object-name>NG DOOR.R1</object-name>
+		<property>/gear/gear[0]/position-norm</property>
+		<interpolation>
+			<entry><ind>0.0</ind><dep>0.0</dep></entry>
+			<entry><ind>0.2</ind><dep>90.0</dep></entry>
+			<entry><ind>0.8</ind><dep>90.0</dep></entry>
+			<entry><ind>1.0</ind><dep>0.0</dep></entry>
+		</interpolation>
+		<axis>
+			<x1-m>10.190</x1-m>
+			<y1-m>0.6</y1-m>
+			<z1-m>-2.084459</z1-m>
+			<x2-m>12.6</x2-m>
+			<y2-m>0.6</y2-m>
+			<z2-m>-2.528678</z2-m>
+		</axis>
+	</animation>
+	
+	<animation>
+		<name>NG Door.Left.Aft</name>
+		<type>rotate</type>
+		<object-name>NG DOOR.L2</object-name>
+		<property>/gear/gear[0]/position-norm</property>
+		<interpolation>
+			<entry><ind>0.2</ind><dep>0.0</dep></entry>
+			<entry><ind>0.8</ind><dep>-60.0</dep></entry>
+		</interpolation>
+		<axis>
+			<x1-m>12.6</x1-m>
+			<y1-m>-0.6</y1-m>
+			<z1-m>-2.528678</z1-m>
+			<x2-m>13.14997</x2-m>
+			<y2-m>-0.6</y2-m>
+			<z2-m>-2.592161</z2-m>
+		</axis>
+	</animation>
+	
+	<animation>
+		<name>NG Door.Right.Aft</name>
+		<type>rotate</type>
+		<object-name>NG DOOR.R2</object-name>
+		<property>/gear/gear[0]/position-norm</property>
+		<interpolation>
+			<entry><ind>0.2</ind><dep>0.0</dep></entry>
+			<entry><ind>0.8</ind><dep>60.0</dep></entry>
+		</interpolation>
+		<axis>
+			<x1-m>12.6</x1-m>
+			<y1-m>0.6</y1-m>
+			<z1-m>-2.528678</z1-m>
+			<x2-m>13.14997</x2-m>
+			<y2-m>0.6</y2-m>
+			<z2-m>-2.592161</z2-m>
+		</axis>
+	</animation>
+	
+	<animation>
+		<name>NG Door.Center</name>
+		<type>rotate</type>
+		<object-name>NG DOOR.C</object-name>
+		<property>/gear/gear[0]/position-norm</property>
+		<interpolation>
+			<entry><ind>0.0</ind><dep>0.0</dep></entry>
+			<entry><ind>0.2</ind><dep>0.0</dep></entry>
+			<entry><ind>0.8</ind><dep>-110.0</dep></entry>
+			<entry><ind>1.0</ind><dep>-110.0</dep></entry>
+		</interpolation>
+		<axis>
+			<x1-m>13.05</x1-m>
+			<y1-m>-1.0</y1-m>
+			<z1-m>-2.408</z1-m>
+			<x2-m>13.05</x2-m>
+			<y2-m>1.0</y2-m>
+			<z2-m>-2.408</z2-m>
+		</axis>
+	</animation>
+	
+</PropertyList>
