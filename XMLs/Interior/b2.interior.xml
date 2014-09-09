@@ -1,0 +1,228 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+	<path>../../Models/Interior/b2.interior.3ds</path>
+	<!--texture-path>../../Textures/Livery/House</texture-path-->
+
+	<animation>
+		<name>Interior.Shadow.Off</name>
+		<type>noshadow</type>
+		<object-name>BINS</object-name>
+		<object-name>CEILING</object-name>
+		<object-name>FLOOR</object-name>
+		<object-name>SIDEWALL</object-name>
+		<object-name>HIDEABLE01</object-name>
+		<object-name>HIDEABLE02</object-name>
+	</animation>
+	
+	<animation>
+		<name>Main_Gear_DOOR.Left</name>
+		<type>noshadow</type>
+		<object-name>MG DOOR.L</object-name>
+	</animation>
+	<animation>
+		<name>Main_Gear_DOOR.Right</name>
+		<type>noshadow</type>
+		<object-name>MG DOOR.R</object-name>
+	</animation>
+	<animation>
+		<name>Nose_Gear_DOOR.Left.01</name>
+		<type>noshadow</type>
+		<object-name>NG DOOR.L1</object-name>
+	</animation>
+	<animation>
+		<name>Nose_Gear_DOOR.Left.02</name>
+		<type>noshadow</type>
+		<object-name>NG DOOR.L2</object-name>
+	</animation>
+	<animation>
+		<name>Nose_Gear_DOOR.Right.01</name>
+		<type>noshadow</type>
+		<object-name>NG DOOR.R1</object-name>
+	</animation>
+	<animation>
+		<name>Nose_Gear_DOOR.Right.02</name>
+		<type>noshadow</type>
+		<object-name>NG DOOR.R2</object-name>
+	</animation>
+
+	<!--animation>
+		<name>Interior.Glow</name>
+		<type>material</type>
+		<object-name>Interior.Shadow.Off</object-name>
+		<property-base>/sim/model/livery/material/emit_color</property-base>
+		<diffuse>
+			<red-prop>diffuse/red</red-prop>
+			<green-prop>diffuse/green</green-prop>
+			<blue-prop>diffuse/blue</blue-prop>
+		</diffuse>
+		<ambient>
+			<red-prop>ambient/red</red-prop>
+			<green-prop>ambient/green</green-prop>
+			<blue-prop>ambient/blue</blue-prop>
+		</ambient>
+		<specular>
+			<red-prop>specular/red</red-prop>
+			<green-prop>specular/green</green-prop>
+			<blue-prop>specular/blue</blue-prop>
+		</specular>
+		<emission>
+			<red-prop>emission/red</red-prop>
+			<green-prop>emission/green</green-prop>
+			<blue-prop>emission/blue</blue-prop>
+		</emission>
+		<transparency>
+			<alpha-prop>transparency/alpha</alpha-prop>
+		</transparency>
+		<shininess-prop>shininess</shininess-prop>
+	</animation-->
+	
+	<!-- Animation for the doors of the main gears. -->
+	<animation>
+		<name>MG DOOR.Left.Animation</name>
+		<type>rotate</type>
+		<object-name>Main_Gear_DOOR.Left</object-name>
+		<property>/gear/gear[1]/position-norm</property>
+		<interpolation>
+			<entry><ind>0.0</ind><dep>0.0</dep></entry>
+			<entry><ind>0.2</ind><dep>90.0</dep></entry>
+			<entry><ind>0.8</ind><dep>90.0</dep></entry>
+			<entry><ind>1.0</ind><dep>0.0</dep></entry>
+		</interpolation>
+		<axis>
+			
+			<x1-m>30.669049</x1-m>
+			<y1-m>-0.530</y1-m>
+			<z1-m>-2.766578</z1-m>
+			
+			<x2-m>32.600943</x2-m>
+			<y2-m>-0.530</y2-m>
+			<z2-m>-2.766578</z2-m>
+			
+		</axis>
+	</animation>
+	<animation>
+		<name>MG DOOR.Right.Animation</name>
+		<type>rotate</type>
+		<object-name>Main_Gear_DOOR.Right</object-name>
+		<property>/gear/gear[2]/position-norm</property>
+		<interpolation>
+			<entry><ind>0.0</ind><dep>0.0</dep></entry>
+			<entry><ind>0.2</ind><dep>-90.0</dep></entry>
+			<entry><ind>0.8</ind><dep>-90.0</dep></entry>
+			<entry><ind>1.0</ind><dep>0.0</dep></entry>
+		</interpolation>
+		<axis>
+			
+			<x1-m>30.669049</x1-m>
+			<y1-m>0.530</y1-m>
+			<z1-m>-2.766578</z1-m>
+			
+			<x2-m>32.600943</x2-m>
+			<y2-m>0.530</y2-m>
+			<z2-m>-2.766578</z2-m>
+			
+		</axis>
+	</animation>
+	
+	<!-- Animation for the doors of the nose gear. -->
+	<animation>
+		<name>NG DOOR.Left.01</name>
+		<type>rotate</type>
+		<object-name>Nose_Gear_DOOR.Left.01</object-name>
+		<property>/gear/gear[0]/position-norm</property>
+		<interpolation>
+			<entry><ind>0.0</ind><dep>0.0</dep></entry>
+			<entry><ind>0.2</ind><dep>-90.0</dep></entry>
+			<entry><ind>0.8</ind><dep>-90.0</dep></entry>
+			<entry><ind>1.0</ind><dep>0.0</dep></entry>
+		</interpolation>
+		<axis>
+			<x1-m>10.190</x1-m>
+			<y1-m>-0.6</y1-m>
+			<z1-m>-2.084459</z1-m>
+			<x2-m>12.6</x2-m>
+			<y2-m>-0.6</y2-m>
+			<z2-m>-2.528678</z2-m>
+		</axis>
+	</animation>
+	
+	<animation>
+		<name>NG DOOR.Right.Animation</name>
+		<type>rotate</type>
+		<object-name>Nose_Gear_DOOR.Right.01</object-name>
+		<property>/gear/gear[0]/position-norm</property>
+		<interpolation>
+			<entry><ind>0.0</ind><dep>0.0</dep></entry>
+			<entry><ind>0.2</ind><dep>90.0</dep></entry>
+			<entry><ind>0.8</ind><dep>90.0</dep></entry>
+			<entry><ind>1.0</ind><dep>0.0</dep></entry>
+		</interpolation>
+		<axis>
+			<x1-m>10.190</x1-m>
+			<y1-m>0.6</y1-m>
+			<z1-m>-2.084459</z1-m>
+			<x2-m>12.6</x2-m>
+			<y2-m>0.6</y2-m>
+			<z2-m>-2.528678</z2-m>
+		</axis>
+	</animation>
+	
+	<animation>
+		<name>NG DOOR.Left.Animation</name>
+		<type>rotate</type>
+		<object-name>Nose_Gear_DOOR.Left.02</object-name>
+		<property>/gear/gear[0]/position-norm</property>
+		<interpolation>
+			<entry><ind>0.2</ind><dep>0.0</dep></entry>
+			<entry><ind>0.8</ind><dep>-60.0</dep></entry>
+		</interpolation>
+		<axis>
+			<x1-m>12.6</x1-m>
+			<y1-m>-0.6</y1-m>
+			<z1-m>-2.528678</z1-m>
+			<x2-m>13.14997</x2-m>
+			<y2-m>-0.6</y2-m>
+			<z2-m>-2.592161</z2-m>
+		</axis>
+	</animation>
+	
+	<animation>
+		<name>NG DOOR.Right.Aft.Animation</name>
+		<type>rotate</type>
+		<object-name>Nose_Gear_DOOR.Right.02</object-name>
+		<property>/gear/gear[0]/position-norm</property>
+		<interpolation>
+			<entry><ind>0.2</ind><dep>0.0</dep></entry>
+			<entry><ind>0.8</ind><dep>60.0</dep></entry>
+		</interpolation>
+		<axis>
+			<x1-m>12.6</x1-m>
+			<y1-m>0.6</y1-m>
+			<z1-m>-2.528678</z1-m>
+			<x2-m>13.14997</x2-m>
+			<y2-m>0.6</y2-m>
+			<z2-m>-2.592161</z2-m>
+		</axis>
+	</animation>
+	
+	<animation>
+		<name>Hideable.Selection</name>
+		<type>selection</type>
+		<object-name>HIDEABLE01</object-name>
+		<object-name>HIDEABLE02</object-name>
+		<condition>
+			<and>
+				<greater-than>
+					<property>/gear/gear[1]/position-norm</property>
+					<value>0</value>
+				</greater-than>
+				<less-than>
+					<property>/gear/gear[1]/position-norm</property>
+					<value>1</value>
+				</less-than>
+			</and>
+		</condition>
+	</animation>
+	
+</PropertyList>

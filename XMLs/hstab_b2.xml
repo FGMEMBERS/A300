@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+	<path>../Models/hstab_b2.3ds</path> 
+	<!--texture-path>../Textures/Livery/House</texture-path-->
+	
+	<offsets>
+		<!--<x-m>52.01</x-m>-->
+		<x-m>51.231</x-m>
+		<z-m>1.6</z-m>
+		<pitch-deg>0.0</pitch-deg>
+	</offsets>
+</PropertyList>

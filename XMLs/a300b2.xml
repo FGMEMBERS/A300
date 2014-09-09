@@ -1,0 +1,78 @@
+<?xml version="1.0"?>
+
+<PropertyList include="b2.fuselage.xml">
+	<offsets>
+		<x-m>-28.938</x-m>
+		<!--z-m>0.1505124</z-m-->
+	</offsets>
+	
+	<model>
+		<name>Flightdeck</name>
+		<path>Aircraft/A300/XMLs/FlightDeck/b2.flightdeck.xml</path>
+		<offsets>
+			<x-m>7.726294</x-m>
+			<z-m>0.7452743</z-m>
+		</offsets>
+	</model>
+	
+	<model>
+		<name>Interior</name>
+		<path>Aircraft/A300/XMLs/Interior/b2.interior.xml</path>
+	</model>
+	
+	<model>
+		<name>Landing Gears</name>
+		<path>Aircraft/A300/XMLs/LandingGears/b2.nlg.xml</path>
+	</model>
+	
+	<model>
+		<name>Horizontal Stabilizer</name>
+		<path>Aircraft/A300/XMLs/hstab_b2.xml</path>
+	</model>
+	
+	<model>
+		<path>Aircraft/A300/XMLs/radome.xml</path>
+	</model>
+	
+	<model>
+		<name>Vertical Stabilizer</name>
+		<path>Aircraft/A300/XMLs/vstab.xml</path>
+	</model>
+	
+	<model>
+		<name>Wings</name>
+		<path>Aircraft/A300/XMLs/Wings/b2.wings.xml</path>
+	</model>
+	
+	<!-- Make the flightdeck invisible from outside views.  This is a temporary measure until we have a
+	     more realistic 3D cockpit. -->
+	<animation>
+		<name>Interior.Hide</name>
+		<type>select</type>
+		<object-name>Flightdeck</object-name>
+		<condition>
+			<equals>
+				<property>sim/current-view/view-number</property>
+				<value>0</value>
+			</equals>
+		</condition>
+	</animation>
+	
+	<!-- Since the exterior model is double-sided at the moment, it will have to be invisible when we
+	     are in inside view. -->
+	<animation>
+		<name>Exterior.Hide</name>
+		<type>select</type>
+		<object-name>DUMMY01</object-name>
+		<object-name>FUSELAGE</object-name>
+		<object-name>FRAME</object-name>
+		<condition>
+			<not>
+			<equals>
+				<property>sim/current-view/view-number</property>
+				<value>0</value>
+			</equals>
+			</not>
+		</condition>
+	</animation>
+</PropertyList>

@@ -1,0 +1,124 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+	<path>../../Models/Wings/b2.trailing.3ds</path>
+	<!--texture-path>../Textures/Livery/House</texture-path-->
+	
+	<!-- Disable shoadow for the following objects. -->
+	<animation>
+		<type>noshadow</type>
+		<object-name>HIDEABLE01</object-name>
+		<object-name>HIDEABLE02</object-name>
+		<object-name>HIDEABLE03</object-name>
+	</animation>
+	<animation>
+		<name>Hideable04</name>
+		<type>noshadow</type>
+		<object-name>HIDEABLE04</object-name>
+	</animation>
+	<animation>
+		<name>Hideable05</name>
+		<type>noshadow</type>
+		<object-name>HIDEABLE05</object-name>
+	</animation>
+	
+	<!-- Gear retraction sequence. -->
+	<animation>
+		<name>Wings.MLG.Doors.L1</name>
+		<type>rotate</type>
+		<object-name>DOOR_L1</object-name>
+		<property>/gear/gear[1]/position-norm</property>
+		<interpolation>
+			<entry><ind>0.0</ind><dep>0.0</dep></entry>
+			<entry><ind>0.2</ind><dep>0.0</dep></entry>
+			<entry><ind>0.8</ind><dep>-80</dep></entry>
+			<entry><ind>1.0</ind><dep>-80</dep></entry>
+		</interpolation>
+		<axis>
+			<x1-m>4.304002</x1-m>
+			<y1-m>-5.062628</y1-m>
+			<z1-m>-0.42349</z1-m>
+			<x2-m>5.926014</x2-m>
+			<y2-m>-5.062628</y2-m>
+			<z2-m>-0.391399</z2-m>
+		</axis>
+	</animation>
+	
+	<animation>
+		<name>Wings.MLG.Doors.L2</name>
+		<type>rotate</type>
+		<object-name>DOOR_L2</object-name>
+		<object-name>Hideable04</object-name>
+		<property>/gear/gear[1]/position-norm</property>
+		<interpolation>
+			<entry><ind>0.0</ind><dep>0.0</dep></entry>
+			<entry><ind>0.2</ind><dep>0.0</dep></entry>
+			<entry><ind>0.8</ind><dep>-80</dep></entry>
+			<entry><ind>1.0</ind><dep>-80</dep></entry>
+		</interpolation>
+		<center>
+			<y-m>-4.800</y-m>
+			<z-m>-0.2389</z-m>
+		</center>
+		<axis>
+			<x>1</x>
+		</axis>
+	</animation>
+	
+	<animation>
+		<name>Wings.MLG.Doors.R1</name>
+		<type>rotate</type>
+		<object-name>DOOR_R1</object-name>
+		<property>/gear/gear[2]/position-norm</property>
+		<interpolation>
+			<entry><ind>0.0</ind><dep>0.0</dep></entry>
+			<entry><ind>0.2</ind><dep>0.0</dep></entry>
+			<entry><ind>0.8</ind><dep>80</dep></entry>
+			<entry><ind>1.0</ind><dep>80</dep></entry>
+		</interpolation>
+		<axis>
+			<x1-m>4.304002</x1-m>
+			<y1-m>5.062628</y1-m>
+			<z1-m>-0.42349</z1-m>
+			<x2-m>5.926014</x2-m>
+			<y2-m>5.062628</y2-m>
+			<z2-m>-0.391399</z2-m>
+		</axis>
+	</animation>
+	
+	<animation>
+		<name>Wings.MLG.Doors.R2</name>
+		<type>rotate</type>
+		<object-name>DOOR_R2</object-name>
+		<object-name>Hideable05</object-name>
+		<property>/gear/gear[2]/position-norm</property>
+		<interpolation>
+			<entry><ind>0.0</ind><dep>0.0</dep></entry>
+			<entry><ind>0.2</ind><dep>0.0</dep></entry>
+			<entry><ind>0.8</ind><dep>80</dep></entry>
+			<entry><ind>1.0</ind><dep>80</dep></entry>
+		</interpolation>
+		<center>
+			<y-m>4.800</y-m>
+			<z-m>-0.2389</z-m>
+		</center>
+		<axis>
+			<x>1</x>
+		</axis>
+	</animation>
+	
+	<animation>
+		<name>Hideable.Selection</name>
+		<type>selection</type>
+		<object-name>HIDEABLE02</object-name>
+		<object-name>HIDEABLE03</object-name>
+		<condition>
+			<greater-than>
+				<property>/gear/gear[1]/position-norm</property>
+				<value>0.2</value>
+			</greater-than>
+		</condition>
+	</animation>
+	
+</PropertyList>

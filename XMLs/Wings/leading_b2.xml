@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+	<path>../../Models/Wings/leading_b2.3ds</path> 
+	<!--texture-path>../Textures/Livery/House</texture-path-->
+	
+	<animation>
+		<name>Hideable</name>
+		<object-name>HIDEABLE01</object-name>
+		<object-name>HIDEABLE02</object-name>
+		<object-name>HIDEABLE03</object-name>
+		<object-name>HIDEABLE04</object-name>
+		<object-name>HIDEABLE05</object-name>
+		<object-name>HIDEABLE06</object-name>
+		<object-name>HIDEABLE07</object-name>
+	</animation>
+	
+	<animation>
+		<name>Slat_L_Outer</name>
+		<object-name>SLAT_L1</object-name>
+		<object-name>HIDEABLE02</object-name>
+	</animation>
+	
+	<animation>
+		<name>Slat_L_Center</name>
+		<object-name>SLAT_L2</object-name>
+		<object-name>HIDEABLE03</object-name>
+	</animation>
+	
+	<animation>
+		<name>Slat_L_Inner</name>
+		<object-name>SLAT_L3</object-name>
+		<object-name>HIDEABLE04</object-name>
+	</animation>
+	
+	<animation>
+		<name>Slat_R_Outer</name>
+		<object-name>SLAT_R1</object-name>
+		<object-name>HIDEABLE05</object-name>
+	</animation>
+	
+	<animation>
+		<name>Slat_R_Center</name>
+		<object-name>SLAT_R2</object-name>
+		<object-name>HIDEABLE06</object-name>
+	</animation>
+	
+	<animation>
+		<name>Slat_R_Inner</name>
+		<object-name>SLAT_R3</object-name>
+		<object-name>HIDEABLE07</object-name>
+	</animation>
+	
+	<animation>
+		<type>noshadow</type>
+		<object-name>Hideable</object-name>
+	</animation>
+</PropertyList>

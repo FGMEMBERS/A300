@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+	<!-- Note there is no difference between the left and right pylon at the moment. -->
+	<path>../Models/b2.pylons.cf6_50.left.3ds</path>
+	<!--texture-path>../Textures/Livery/House</texture-path-->
+</PropertyList>
