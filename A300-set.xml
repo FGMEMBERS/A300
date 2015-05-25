@@ -226,7 +226,7 @@
 		<!- Switch: ->
 		<!- Conversion functions ->
 		<base_converter>
-			<file>Aircraft/A380/Systems/AFDX/Switch/converter.nas</file>
+			<file>Aircraft/A300/Systems/AFDX/Switch/converter.nas</file>
 			<script>
 				globals.asciiToDec = asciiToDec;
 				globals.baseToDec = baseToDec;
@@ -238,39 +238,39 @@
 		</base_converter>
 		<!- Load all abstract data types ->
 		<queue>
-			<file>Aircraft/A380/Systems/AFDX/Switch/queue.nas</file>
+			<file>Aircraft/A300/Systems/AFDX/Switch/queue.nas</file>
 			<script>
 				globals.Queue = Queue;
 			</script>
 		</queue>
 		<binary_tree>
-			<file>Aircraft/A380/Systems/AFDX/Switch/binarytree.nas</file>
+			<file>Aircraft/A300/Systems/AFDX/Switch/binarytree.nas</file>
 			<script>
 				globals.BinaryTree = BinaryTree;
 			</script>
 		</binary_tree>
 		<binary_search_tree>
-			<file>Aircraft/A380/Systems/AFDX/Switch/binarysearchtree.nas</file>
+			<file>Aircraft/A300/Systems/AFDX/Switch/binarysearchtree.nas</file>
 			<script>
 				globals.BinarySearchTree = BinarySearchTree;
 			</script>
 		</binary_search_tree>
 		<!- Load all hard components of the switch ->
 		<port>
-			<file>Aircraft/A380/Systems/AFDX/Switch/port.nas</file>
+			<file>Aircraft/A300/Systems/AFDX/Switch/port.nas</file>
 			<script>
 				globals.Port = Port;
 			</script>
 		</port>
 		<switch_port>
-			<file>Aircraft/A380/Systems/AFDX/Switch/switchport.nas</file>
+			<file>Aircraft/A300/Systems/AFDX/Switch/switchport.nas</file>
 			<script>
 				globals.SwitchPort = SwitchPort;
 			</script>
 		</switch_port>
 		<!- Load all soft components of the switch ->
 		<protocols>
-			<file>Aircraft/A380/Systems/AFDX/Switch/protocols.nas</file>
+			<file>Aircraft/A300/Systems/AFDX/Switch/protocols.nas</file>
 			<script>
 				globals.BPDU = BPDU;
 				globals.Frame = Frame;
@@ -278,21 +278,21 @@
 			</script>
 		</protocols>
 		<address_table>
-			<file>Aircraft/A380/Systems/AFDX/Switch/addresstable.nas</file>
+			<file>Aircraft/A300/Systems/AFDX/Switch/addresstable.nas</file>
 			<script>
 				globals.AddressTable = AddressTable;
 			</script>
 		</address_table>
 		<!- Switch ->
 		<switch>
-			<file>Aircraft/A380/Systems/AFDX/Switch/switch.nas</file>
+			<file>Aircraft/A300/Systems/AFDX/Switch/switch.nas</file>
 			<script>
 				globals.Switch = Switch;
 			</script>
 		</switch>
 		<!- Bus ->
 		<bus>
-			<file>Aircraft/A380/Systems/AFDX/Bus/bus.nas</file>
+			<file>Aircraft/A300/Systems/AFDX/Bus/bus.nas</file>
 			<script>
 				globals.Bus = Bus;
 			</script>
@@ -300,7 +300,7 @@
 		
 		<!- Define AFDX Network ->
 		<define_afdx>
-			<file>Aircraft/A380/Systems/AFDX/afdx.nas</file>
+			<file>Aircraft/A300/Systems/AFDX/afdx.nas</file>
 			<script>
 				Network.create();
 				Network.makeConnections();
