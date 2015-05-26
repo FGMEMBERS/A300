@@ -12,23 +12,23 @@
 	</offsets>
 
 	<!--model>
-		<path>Aircraft/A380/XMLs/pylon1.xml</path>
+		<path>Aircraft/A300/XMLs/pylon1.xml</path>
 	</model>
 
 	<model>
-		<path>Aircraft/A380/XMLs/pylon2.xml</path>
+		<path>Aircraft/A300/XMLs/pylon2.xml</path>
 	</model>
 
 	<model>
-		<path>Aircraft/A380/XMLs/pylon3.xml</path>
+		<path>Aircraft/A300/XMLs/pylon3.xml</path>
 	</model>
 
 	<model>
-		<path>Aircraft/A380/XMLs/pylon4.xml</path>
+		<path>Aircraft/A300/XMLs/pylon4.xml</path>
 	</model>
 
 	<model>
-		<path>Aircraft/A380/XMLs/bathtub.xml</path>
+		<path>Aircraft/A300/XMLs/bathtub.xml</path>
 	</model-->
 
 </PropertyList>
