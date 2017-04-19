@@ -10,6 +10,22 @@
   <flight-model>jsb</flight-model>
   <aero>A300B2-103</aero>
 
+  <tags>
+      <tag>airbus</tag>
+      <tag>low-wing</tag>
+      <tag>tricycle</tag>
+      <tag>retractable-gear</tag>
+      <tag>twin-engine</tag>
+      <tag>jet</tag>
+      <tag>ifr</tag>
+      <tag>transport</tag>
+      <tag>1970s</tag>
+      <tag>1980s</tag>
+      <tag>1990s</tag>
+      <tag>2000s</tag>
+    </tags>
+
+
   <model>
    <path>Aircraft/A300/XMLs/a300b2.xml</path>
    <livery>
